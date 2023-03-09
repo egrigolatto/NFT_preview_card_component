@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+/* Primary */
+--SoftBlue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+/* Neutral */
+--VeryDarkBlueMain: hsl(217, 54%, 11%); 
+--VeryDarkBlueCard: hsl(216, 50%, 16%);   
+--VeryDarkBlue: hsl(215, 32%, 27%); 
+--White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--VeryDarkBlueMain);
+}
+.contenedor{
+    width: 360px;
+    background-color: var(--VeryDarkBlueCard);
+    padding: 25px;
+    border-radius: 15px;
+}
+.imagen{
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 10px;
+    width: 310px;
+    height: 310px;
+    overflow: hidden;
+}
+
+.imagen > img{
+    width: 100%;
+    border-radius: 10px;
+}
+.informacion > h3{
+    color: var(--White);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.informacion > h4{
+    color: var(--SoftBlue);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.uno{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 25px;
+    border-bottom: 0.1px solid hsl(215, 51%, 70%,0.3);
+    margin-bottom: 15px;
+}
+.uno > h4:first-of-type{
+    position: absolute;
+    left: 18px;
+    color: var(--Cyan);
+    font-weight: 600;
+    font-size: 0.9em;
+}
+.uno > img:last-of-type{
+    position: absolute;
+    right: 80px;
+}
+.uno > h4:last-of-type{
+    color: var(--SoftBlue);
+    font-size: 0.9em;
+    font-weight: 400;  
+}
+.dos{
+    display: flex;
+    align-items: center;
+}
+.dos img{
+    width: 11%;
+    margin: px;
+    border: 1.5px solid var(--White);
+    border-radius: 50%;
+}
+.dos h4{
+    margin-left: 15px;
+    color: var(--SoftBlue);
+    font-weight: 400;
+    font-size: 0.9em;
+}
+.dos span{
+    color: var(--White);
+}
+.dos span:hover{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.capa{
+    background-color: hsl(178, 100%, 50%,0.4);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.capa:hover{
+    opacity: 1;
+}
+
+
+
+
